@@ -43,8 +43,7 @@ public class NameHandler {
 
     public int getAge() {
         return Period.between(LocalDate.parse(birth, DateTimeFormatter.ofPattern("d/M/y")),LocalDate.now()).getYears();
-        //LocalDate.now().getYear() - Integer.parseInt(birth.split("/")[2]);
-    }
+       }
 
     public int getHour() {
         
